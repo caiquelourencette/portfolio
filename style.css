@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth
+}
+
 .bgimage {
   height: 100vh;
   background: url('images/heroImage.jpg');
@@ -22,8 +26,15 @@
   color: #fff;
 }
 
+.nav-link,
+a.navbar-brand {
+  color: #e3e3e3 !important;
+  text-shadow: 2px 2px 3px rgba(51, 51, 51, 1);
+}
+
 .imageAboutPage {
   width: 100%;
+
 }
 
 .servicesIcon {
@@ -45,7 +56,8 @@
 }
 
 .navbarScroll.navbarDark {
-  background-color: black;
+  background-color: #000000;
+  color: #e3e3e3;
 }
 
 .social-icons {
@@ -81,4 +93,24 @@
 
 #contact {
   padding-bottom: 4rem;
+}
+
+.portfolioContent,
+.servicesText,
+.card {
+  border-radius: 12px;
+  -webkit-box-shadow: 5px 5px 7px 0px rgba(0, 0, 0, 0.35);
+  -moz-box-shadow: 5px 5px 7px 0px rgba(0, 0, 0, 0.35);
+  box-shadow: 5px 5px 7px 0px rgba(0, 0, 0, 0.35);
+}
+
+.servicesText,
+.btn-success {
+  transition: all 0.2s ease-in-out !important;
+}
+
+.servicesText:hover,
+.btn-success:hover {
+  transform: scale(1.07);
+  box-shadow: 5px 5px 7px 0px rgba(0, 0, 0, 0.35);
 }
